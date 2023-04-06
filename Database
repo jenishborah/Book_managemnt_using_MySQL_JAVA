@@ -3,15 +3,25 @@
 a) Creating database:
 1. create database book_managemnt_db;
 
-b) Creating table BOOKS
+b)Use The database to create a Table
+1. USE book_managemnt_db;
+
+c) Creating table BOOKS:
 CREATE TABLE `books` (
-`bid` int(11) NOT NULL AUTO_INCREMENT,
-`book_isbn` varchar(40) NOT NULL,
-`book_name` varchar(50) NOT NULL,
-`book_publisher` varchar(50) NOT NULL,
-`book_edition` varchar(50) NOT NULL,
-`book_genre` varchar(20) NOT NULL,
-`book_price` int(11) NOT NULL,
-`book_pages` int(11) NOT NULL,
-PRIMARY KEY (`bid`)
+book_id INT NOT NULL AUTO_INCREMENT
+book_name VARCHAR(100) NOT NULL
+book_publisher VARCHAR(50) NOT NULL
+book_edition VARCHAR(50) NOT NULL
+book_genre VARCHAR(50) NOT NULL
+book_price INT NOT NULL
+authors VARCHAR(100) NOT NULL
+book_pages INT NOT NULL
+PRIMARY KEY (`book_id`)
 )
+
+NOTE: Book_id is The PRIMARY KEY here in the BOOKS table to uniquly identify a book
+
+d) Inserting Values to Table BOOKS:
+one Example-
+INSERT INTO BOOKS (book_id, book_name, book_publisher, book_edition, book_genre, book_price, authors, book_pages )
+VALUES ('188', 'DISTRIBUTED SYSTEMS CONCEPTS AND DESIGN','PEARSON EDUCATION','THIRD EDITION','DISTRIBUTED SYSTEM','699','George Coulouris, Jean Dollimore'.'772');
