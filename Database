@@ -1,0 +1,17 @@
+##Sql Queries
+
+a) Creating database:
+1. create database book_managemnt_db;
+
+b) Creating table BOOKS
+CREATE TABLE `books` (
+`bid` int(11) NOT NULL AUTO_INCREMENT,
+`book_isbn` varchar(40) NOT NULL,
+`book_name` varchar(50) NOT NULL,
+`book_publisher` varchar(50) NOT NULL,
+`book_edition` varchar(50) NOT NULL,
+`book_genre` varchar(20) NOT NULL,
+`book_price` int(11) NOT NULL,
+`book_pages` int(11) NOT NULL,
+PRIMARY KEY (`bid`)
+)
