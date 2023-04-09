@@ -6,7 +6,7 @@ This project is a book management system developed using Java and MySQL. It allo
 
 To run this project, I use the following:
 
-- VS code(JAVA)
+- NetBeans
 - MySQL Server
 - MySQL Connector/J JDBC driver
 
