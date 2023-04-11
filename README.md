@@ -39,9 +39,9 @@ The database schema for this project consists of a single table named `books`. T
 
 'Book_title'  varchar(100) not null
 
-'| Edition      | varchar(10)  | YES  |     | NULL    |       |'
-| Author       | varchar(100) | NO   |     | NULL    |       |
-| Published_by | varchar(40)  | NO   |     | NULL    |       |
-| Genre        | varchar(20)  | NO   |     | NULL    |       |
-| Price_in_Rs  | int          | NO   |     | NULL    |       |
-| Total_Pages  | int          | NO   |     | NULL
+'Edition' varchar(10)  
+'Author'  varchar(100) not null     
+'Published_by'  varchar(40)  not null     
+'Genre'  varchar(20)  not null  
+'Price_in_Rs'  int   not null  
+'Total_Pages'  int   not null  
