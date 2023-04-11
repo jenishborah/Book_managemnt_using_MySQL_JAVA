@@ -21,30 +21,25 @@ To run this project, I use the following:
 
 ## Usage
 
-When the program starts, you will see a menu with the following options(for User Interface):
+When the program starts, you will see login page. 
 
-1. View all books
-2. Search a Particular book
-3. Exit
-
-When the program starts, you will see a menu with the following options(for Admin Interface):
+When the program starts after login, you will see a menu with the following options:
 1. View all books
 2. Add a new book
-3. Update a book
-4. Delete a book
+3. Search any books by different options
 5. Exit
 
-Select an option by entering the corresponding number and pressing enter. Follow the prompts to perform the desired action.
+
 
 ## Database Schema
 
 The database schema for this project consists of a single table named `books`. The table has the following columns:
 
-- `book_id` INT NOT NULL AUTO_INCREMENT
-- `book_name` VARCHAR(100) NOT NULL
-- `book_publisher` VARCHAR(50) NOT NULL
-- `book_edition` VARCHAR(50) NOT NULL
-- `book_genre` VARCHAR(50) NOT NULL
-- `book_price` INT NOT NULL
-- `authors` VARCHAR(100) NOT NULL
-- `book_pages` INT NOT NULL
+| Book_id      | int          | NO   | PRI | NULL    |       |
+| Book_title   | varchar(100) | NO   |     | NULL    |       |
+| Edition      | varchar(10)  | YES  |     | NULL    |       |
+| Author       | varchar(100) | NO   |     | NULL    |       |
+| Published_by | varchar(40)  | NO   |     | NULL    |       |
+| Genre        | varchar(20)  | NO   |     | NULL    |       |
+| Price_in_Rs  | int          | NO   |     | NULL    |       |
+| Total_Pages  | int          | NO   |     | NULL
