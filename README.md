@@ -36,9 +36,7 @@ When the program starts after login, you will see a menu with the following opti
 The database schema for this project consists of a single table named `books`. The table has the following columns:
 
 'Book_id' int not null
-
 'Book_title'  varchar(100) not null
-
 'Edition' varchar(10)  
 'Author'  varchar(100) not null     
 'Published_by'  varchar(40)  not null     
