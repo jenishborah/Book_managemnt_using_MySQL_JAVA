@@ -1,7 +1,8 @@
 import java.sql.*;
 import Project.ConnectionProvider;
 import javax.swing.JOptionPane;
-
+import java.awt.Dimension;
+import java.awt.Toolkit;
 public class newBook extends javax.swing.JFrame {
 
     /**
@@ -9,6 +10,7 @@ public class newBook extends javax.swing.JFrame {
      */
     public newBook() {
         initComponents();
+        setWindowSizeToScreenSize();
     }
 
     /**
@@ -236,7 +238,13 @@ public class newBook extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+private void setWindowSizeToScreenSize() {
+        // Get the screen size
+        Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
 
+        // Set the JFrame size to match the screen size
+        setSize(screenSize.width, screenSize.height);
+    }
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
@@ -287,7 +295,7 @@ public class newBook extends javax.swing.JFrame {
      }
      catch(Exception e)
      {
-       JOptionPane.showMessageDialog(null,"Updated"); 
+       JOptionPane.showMessageDialog(null,"Something is Wrong!!"); 
          setVisible(false);
             new newBook().setVisible(true);
             }

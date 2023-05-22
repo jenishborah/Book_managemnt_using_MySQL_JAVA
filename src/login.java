@@ -1,4 +1,6 @@
 
+import java.awt.Dimension;
+import java.awt.Toolkit;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.JPasswordField;
@@ -10,6 +12,7 @@ public class login extends javax.swing.JFrame {
     public login() {
         initComponents();
         setExtendedState(JFrame.MAXIMIZED_BOTH);
+        setWindowSizeToScreenSize();
     }
 
     /**
@@ -95,9 +98,15 @@ public class login extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+private void setWindowSizeToScreenSize() {
+        // Get the screen size
+        Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
 
+        // Set the JFrame size to match the screen size
+        setSize(screenSize.width, screenSize.height);
+    }
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        if(jTextField1.getText().equals("DeptOfCS") && jPasswordField1.getText().equals("abcd1234"))
+        if(jTextField1.getText().equals("DeptCS") && jPasswordField1.getText().equals("abcd1234"))
         {
         setVisible(false);
         new home().setVisible(true);

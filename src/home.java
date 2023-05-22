@@ -7,6 +7,9 @@
  *
  * @author jenis
  */
+import java.awt.Dimension;
+import java.awt.Toolkit;
+
 public class home extends javax.swing.JFrame {
 
     /**
@@ -15,6 +18,7 @@ public class home extends javax.swing.JFrame {
     public home() {
         initComponents();
         setExtendedState(MAXIMIZED_BOTH);
+        setWindowSizeToScreenSize();
     }
 
     /**
@@ -103,7 +107,13 @@ public class home extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+private void setWindowSizeToScreenSize() {
+        // Get the screen size
+        Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
 
+        // Set the JFrame size to match the screen size
+        setSize(screenSize.width, screenSize.height);
+    }
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
            setVisible(false);
               new newBook().setVisible(true); // TODO add your handling code here:
@@ -116,7 +126,7 @@ public class home extends javax.swing.JFrame {
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
          setVisible(false);
-              new sbook().setVisible(true); // TODO add your handling code here:
+              new sbook2().setVisible(true); // TODO add your handling code here:
     }//GEN-LAST:event_jButton5ActionPerformed
 
     /**
