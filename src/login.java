@@ -37,12 +37,10 @@ public class login extends javax.swing.JFrame {
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setBackground(new java.awt.Color(204, 204, 204));
-        jLabel1.setFont(new java.awt.Font("Segoe UI Symbol", 3, 24)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(153, 153, 255));
+        jLabel1.setFont(new java.awt.Font("Sylfaen", 0, 24)); // NOI18N
         jLabel1.setText("User Name");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 380, 130, 40));
 
-        jTextField1.setBackground(new java.awt.Color(153, 255, 255));
         jTextField1.setFont(new java.awt.Font("Yu Gothic UI Semilight", 2, 24)); // NOI18N
         jTextField1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
@@ -50,12 +48,12 @@ public class login extends javax.swing.JFrame {
                 jTextField1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 380, 250, 50));
+        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 370, 250, 50));
 
         jButton1.setBackground(new java.awt.Color(204, 204, 255));
-        jButton1.setFont(new java.awt.Font("Segoe UI Semibold", 2, 18)); // NOI18N
+        jButton1.setFont(new java.awt.Font("Sylfaen", 2, 18)); // NOI18N
         jButton1.setText("Login");
-        jButton1.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(153, 0, 0)));
+        jButton1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -64,9 +62,9 @@ public class login extends javax.swing.JFrame {
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 600, 110, 50));
 
         jButton2.setBackground(new java.awt.Color(204, 204, 255));
-        jButton2.setFont(new java.awt.Font("Yu Gothic UI Semibold", 2, 18)); // NOI18N
+        jButton2.setFont(new java.awt.Font("Sylfaen", 2, 18)); // NOI18N
         jButton2.setText("Cancel");
-        jButton2.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(153, 51, 0)));
+        jButton2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
@@ -74,13 +72,11 @@ public class login extends javax.swing.JFrame {
         });
         getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1000, 600, 140, 50));
 
-        jPasswordField1.setBackground(new java.awt.Color(153, 255, 255));
         jPasswordField1.setFont(new java.awt.Font("Segoe UI Semilight", 2, 18)); // NOI18N
         jPasswordField1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        getContentPane().add(jPasswordField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 460, 250, 50));
+        getContentPane().add(jPasswordField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 450, 250, 50));
 
-        jLabel2.setFont(new java.awt.Font("Yu Gothic UI Semibold", 2, 24)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(153, 153, 255));
+        jLabel2.setFont(new java.awt.Font("Sylfaen", 0, 24)); // NOI18N
         jLabel2.setText("Password");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 460, 160, -1));
 
@@ -92,7 +88,6 @@ public class login extends javax.swing.JFrame {
 
         jLabel5.setBackground(new java.awt.Color(102, 102, 102));
         jLabel5.setFont(new java.awt.Font("Yu Gothic UI", 0, 48)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(51, 255, 0));
         jLabel5.setText("Book Management System");
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 80, 580, 90));
 
@@ -113,7 +108,7 @@ private void setWindowSizeToScreenSize() {
     }//GEN-LAST:event_jButton1ActionPerformed
 
         else
-            JOptionPane.showMessageDialog(null, "Incorrect User Name or Paaword \n Contact JenishBorah");
+            JOptionPane.showMessageDialog(null, "Incorrect User Name or Password \n Contact admin");
     }
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         System.exit(0);

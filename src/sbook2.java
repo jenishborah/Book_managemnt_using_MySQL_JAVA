@@ -37,107 +37,108 @@ public class sbook2 extends javax.swing.JFrame {
         // Set the JFrame size to match the screen size
         setSize(screenSize.width, screenSize.height);
     }
+  
     // <editor-fold defaultstate="collapsed" desc="Generated Code">                          
-    private void initComponents() {
+   private void initComponents() {
+    searchButton = new javax.swing.JButton();
+    searchTextField = new javax.swing.JTextField();
+    searchOptionButtonGroup = new javax.swing.ButtonGroup();
+    bookIdRadioButton = new javax.swing.JRadioButton();
+    bookNameRadioButton = new javax.swing.JRadioButton();
+    genreRadioButton = new javax.swing.JRadioButton();
+    authorsRadioButton = new javax.swing.JRadioButton();
+    jScrollPane1 = new javax.swing.JScrollPane();
+    searchResultTable = new javax.swing.JTable();
+    jButton3 = new javax.swing.JButton();
 
-        searchButton = new javax.swing.JButton();
-        searchTextField = new javax.swing.JTextField();
-        searchOptionButtonGroup = new javax.swing.ButtonGroup();
-        bookIdRadioButton = new javax.swing.JRadioButton();
-        bookNameRadioButton = new javax.swing.JRadioButton();
-        genreRadioButton = new javax.swing.JRadioButton();
-        authorsRadioButton = new javax.swing.JRadioButton();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        searchResultTable = new javax.swing.JTable();
+    setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+    setTitle("Book Search");
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setSize(3000, 1800);
-        setTitle("Book Search");
+   jButton3.setText("Back");
+jButton3.addActionListener(new java.awt.event.ActionListener() {
+    public void actionPerformed(java.awt.event.ActionEvent evt) {
+        jButton3ActionPerformed(evt);
+    }
+});
 
-        searchButton.setText("Find Books");
-        searchButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                searchButtonActionPerformed(evt);
-            }
-        });
+// Update this line
+searchButton.setText("Find Books");
+searchButton.addActionListener(new java.awt.event.ActionListener() {
+    public void actionPerformed(java.awt.event.ActionEvent evt) {
+        searchButtonActionPerformed(evt);
+    }
+});
 
-        searchOptionButtonGroup.add(bookIdRadioButton);
-        bookIdRadioButton.setSelected(true);
-        bookIdRadioButton.setText("Book ID");
+    searchOptionButtonGroup.add(bookIdRadioButton);
+    bookIdRadioButton.setSelected(true);
+    bookIdRadioButton.setText("Book ID");
 
-        searchOptionButtonGroup.add(bookNameRadioButton);
-        bookNameRadioButton.setText("Book Name");
+    searchOptionButtonGroup.add(bookNameRadioButton);
+    bookNameRadioButton.setText("Book Name");
 
-        searchOptionButtonGroup.add(genreRadioButton);
-        genreRadioButton.setText("Genre");
+    searchOptionButtonGroup.add(genreRadioButton);
+    genreRadioButton.setText("Genre");
 
-        searchOptionButtonGroup.add(authorsRadioButton);
-        authorsRadioButton.setText("Authors");
+    searchOptionButtonGroup.add(authorsRadioButton);
+    authorsRadioButton.setText("Authors");
 
-        searchResultTable.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
+    searchResultTable.setModel(new javax.swing.table.DefaultTableModel(
+        new Object [][] {
 
-            },
-            new String [] {
-                "Book ID", "Book Name", "Genre", "Authors"
-            }
-        ));
-         searchButton.setFont(new java.awt.Font("Tahoma", 0, 18)); // Increase button font size
-    searchTextField.setFont(new java.awt.Font("Tahoma", 0, 18)); // Increase text field font size
-    bookNameRadioButton.setFont(new java.awt.Font("Tahoma", 0, 18)); // Increase radio button font size
-    genreRadioButton.setFont(new java.awt.Font("Tahoma", 0, 18)); // Increase radio button font size
-    authorsRadioButton.setFont(new java.awt.Font("Tahoma", 0, 18)); // Increase radio button font size
-    bookIdRadioButton.setFont(new java.awt.Font("Tahoma", 0, 18)); // Increase radio button font size
-    searchResultTable.setFont(new java.awt.Font("Tahoma", 0, 18)); // Increase table font size
+        },
+        new String [] {
+            "Book ID", "Book Name", "Genre", "Authors"
+        }
+    ));
+    jScrollPane1.setViewportView(searchResultTable);
 
-    searchButton.setPreferredSize(new java.awt.Dimension(120, 40)); // Increase button size
-    searchTextField.setPreferredSize(new java.awt.Dimension(200, 30)); // Increase text field size
-
-        jScrollPane1.setViewportView(searchResultTable);
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 380, Short.MAX_VALUE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(bookIdRadioButton)
-                            .addComponent(bookNameRadioButton)
-                            .addComponent(genreRadioButton)
-                            .addComponent(authorsRadioButton))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(searchTextField)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(searchButton)))
-                .addContainerGap())
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(searchTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(searchButton)
-                    .addComponent(bookIdRadioButton))
+    javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+    getContentPane().setLayout(layout);
+    layout.setHorizontalGroup(
+        layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        .addGroup(layout.createSequentialGroup()
+            .addContainerGap()
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 380, Short.MAX_VALUE)
+                .addGroup(layout.createSequentialGroup()
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(bookIdRadioButton)
+                        .addComponent(bookNameRadioButton)
+                        .addComponent(genreRadioButton)
+                        .addComponent(authorsRadioButton))
+                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                    .addComponent(searchTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                    .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                    .addComponent(searchButton, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)))
+            .addContainerGap())
+    );
+    layout.setVerticalGroup(
+        layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        .addGroup(layout.createSequentialGroup()
+            .addContainerGap()
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addComponent(searchTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(searchButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(bookIdRadioButton))
+            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+            .addComponent(bookNameRadioButton)
+            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+            .addComponent(genreRadioButton)
+            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+            .addComponent(authorsRadioButton)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(bookNameRadioButton)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(genreRadioButton)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(authorsRadioButton)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 200, Short.MAX_VALUE)
-                .addContainerGap())
-        );
+                    .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    
+            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 200, Short.MAX_VALUE)
+            .addContainerGap())
+    );
 
-        pack();
-    }// </editor-fold>                        
-
-    private void searchButtonActionPerformed(java.awt.event.ActionEvent evt) {                                             
+    pack();
+}
+ private void searchButtonActionPerformed(java.awt.event.ActionEvent evt) {                                             
         String searchBy = "";
         if (bookIdRadioButton.isSelected()) {
             searchBy = "Book_id";
@@ -175,6 +176,10 @@ public class sbook2 extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(this, "Error: " + e.getMessage(), "Database Error", JOptionPane.ERROR_MESSAGE);
         }
     }                                            
+private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+              setVisible(false);
+              new home().setVisible(true);
+    }                                        
 
     /**
      * @param args the command line arguments
@@ -219,6 +224,7 @@ public class sbook2 extends javax.swing.JFrame {
     private javax.swing.ButtonGroup searchOptionButtonGroup;
     private javax.swing.JTable searchResultTable;
     private javax.swing.JTextField searchTextField;
+     private javax.swing.JButton jButton3;
     // End of variables declaration                   
 }
 
